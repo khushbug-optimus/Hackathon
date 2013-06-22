@@ -8,3 +8,13 @@ C:\Users\Varun\Downloads\elfinderaspnet-bc84f6da53d0\elfinderaspnet_bc84f6da53d0
 C:\Users\Varun\Downloads\elfinderaspnet-bc84f6da53d0\elfinderaspnet_bc84f6da53d0\elFinder.Connector\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Varun\Downloads\elfinderaspnet-bc84f6da53d0\elfinderaspnet_bc84f6da53d0\elFinder.Connector\obj\Debug\elFinder.Connector.dll
 C:\Users\Varun\Downloads\elfinderaspnet-bc84f6da53d0\elfinderaspnet_bc84f6da53d0\elFinder.Connector\obj\Debug\elFinder.Connector.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\elFinder.Connector.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\elFinder.Connector.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\Autofac.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\Autofac.xml
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\obj\Debug\elFinder.Connector.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.Connector\obj\Debug\elFinder.Connector.pdb

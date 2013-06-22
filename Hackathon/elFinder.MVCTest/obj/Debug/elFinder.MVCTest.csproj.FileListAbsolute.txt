@@ -34,3 +34,15 @@ C:\Users\Varun\Documents\Visual Studio 2010\Projects\Hackathon\elFinder.MVCTest\
 C:\Users\Varun\Documents\Visual Studio 2010\Projects\Hackathon\elFinder.MVCTest\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Varun\Documents\Visual Studio 2010\Projects\Hackathon\elFinder.MVCTest\obj\Debug\elFinder.MVCTest.dll
 C:\Users\Varun\Documents\Visual Studio 2010\Projects\Hackathon\elFinder.MVCTest\obj\Debug\elFinder.MVCTest.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\elFinder.MVCTest.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\elFinder.MVCTest.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\Autofac.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\elFinder.Connector.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\Newtonsoft.Json.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\elFinder.Connector.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\Autofac.xml
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\Newtonsoft.Json.pdb
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\bin\Newtonsoft.Json.xml
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\obj\Debug\elFinder.MVCTest.dll
+C:\Users\Varun\Desktop\Hackthon\New folder\Hackathon\Hackathon\elFinder.MVCTest\obj\Debug\elFinder.MVCTest.pdb

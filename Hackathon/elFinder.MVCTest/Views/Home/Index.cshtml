@@ -1,17 +1,6 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-@*<div class="fileManager">finder</div>   
-
- <script type="text/javascript" charset="utf-8">
-     $(function () {
-         $('.fileManager').elfinder({
-             url: '@Url.Content("~/elfinder.connector")',
-             height: 400,
-             width: 300
-         });
-     });
-</script>*@
 <form id="Form1" runat="server">
 <!-- Home -->
 <div data-role="page" id="home">
@@ -42,31 +31,32 @@
     </div>
     <div data-role="content">
         <div data-role="fieldcontain">
-            <label for="textinput1">
+            <label for="txtIpAddress">
                 IP Address
             </label>
-            <input name="" id="textinput1" placeholder="192.168.1.1" value="" type="text" data-mini="true">
+            <input name="" id="txtIpAddress" placeholder="192.168.1.1" value="" type="text" data-mini="true">
         </div>
         <div data-role="fieldcontain">
-            <label for="textinput2">
+            <label for="txtPortNumber">
                 Port
             </label>
-            <input name="" id="textinput2" placeholder="21" value="" type="number" data-mini="true">
+            <input name="" id="txtPortNumber" placeholder="21" value="" type="number" data-mini="true">
         </div>
         <div data-role="fieldcontain">
-            <label for="textinput3">
+            <label for="txtUserName">
                 User Name
             </label>
-            <input name="" id="textinput3" placeholder="anonymous" value="" type="text" data-mini="true">
+            <input name="" id="txtUserName" placeholder="anonymous" value="" type="text" data-mini="true">
         </div>
         <div data-role="fieldcontain">
-            <label for="textinput4">
+            <label for="txtPassword">
                 Password
             </label>
-            <input name="" id="textinput4" placeholder="" value="" type="password" data-mini="true">
+            <input name="" id="txtPassword" placeholder="" value="" type="password" data-mini="true">
         </div>
-        <a data-role="button" href="#uploader" data-icon="gear" data-iconpos="left">Test Connection
-        </a><a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home
+        <a data-role="button" href="#uploader" data-icon="gear" data-iconpos="left" id = "btnTestConnection" onclick = "javascript:FtpConnection();">Test Connection
+        </a>
+        <a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home
             Page &lt;&lt; </a>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
