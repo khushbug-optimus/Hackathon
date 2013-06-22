@@ -1,0 +1,7 @@
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\bin\HackathonMvc.dll
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\bin\HackathonMvc.pdb
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\bin\EntityFramework.dll
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\bin\EntityFramework.xml
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\obj\Debug\ResolveAssemblyReference.cache
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\obj\Debug\HackathonMvc.dll
+c:\users\varun\documents\visual studio 2010\Projects\HackathonMvc\HackathonMvc\obj\Debug\HackathonMvc.pdb
