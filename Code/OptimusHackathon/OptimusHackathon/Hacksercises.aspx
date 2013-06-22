@@ -19,6 +19,7 @@
 
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  <script src="Scripts/jquery.MultiFile.js" type="text/javascript"></script>
    
 </head>
 <body>
@@ -117,7 +118,7 @@
                 Choose Files to Upload
             </label>
 			<br/>
-            <input name="" id="filesUploader" type="file">
+             <asp:FileUpload ID="file_upload" class="multi" runat="server" Width="400" size="50" />
         </div>
 		<a data-role="button" href="#home" data-icon="gear" data-iconpos="left">
             Upload
