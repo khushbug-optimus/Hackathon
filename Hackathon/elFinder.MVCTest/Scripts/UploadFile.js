@@ -40,3 +40,23 @@ function FileUpload() {
         }
     });
 }
+
+function FileDownload() {
+    $.ajax({
+        url: "/Upload/UploadFiles",
+        cache: false,
+        type: "POST",
+        dataType: "json",
+        async: false,
+        data: {
+    },
+    success: function (data) {
+        if (data) {
+            alert("Connected successfully");
+        }
+        else {
+            alert("Unable to connect Please try again later");
+        }
+    }
+});
+}
