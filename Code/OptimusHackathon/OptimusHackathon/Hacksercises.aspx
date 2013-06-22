@@ -23,8 +23,9 @@
    
 </head>
 <body>
-
+   <form id="Form1" runat="server">
 <!-- Home -->
+
 <div data-role="page" id="home">
     <div data-theme="a" data-role="header">
         <h3>
@@ -218,5 +219,6 @@
         </h3>
     </div>
 </div>
+</form>
 </body>
 </html>
