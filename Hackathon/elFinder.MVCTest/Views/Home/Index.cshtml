@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-<form id="Form1" runat="server">
+<form action="" method="post" enctype="multipart/form-data">
 <!-- Home -->
 <div data-role="page" id="home">
     <div data-theme="a" data-role="header">
@@ -12,7 +12,7 @@
     <div data-role="content">
         <ul data-role="listview" data-divider-theme="b" data-inset="true">
             <li data-role="list-divider" role="heading">Please choose your action </li>
-            <li data-theme="c"><a href="#connector" data-transition="slide">Upload </a></li>
+            <li data-theme="c"><a href="#uploader" data-transition="slide">Upload </a></li>
             <li data-theme="c"><a href="#downloader" data-transition="slide">Download </a></li>
         </ul>
     </div>
@@ -22,49 +22,7 @@
         </h3>
     </div>
 </div>
-<!-- Test Connection Page -->
-<div data-role="page" id="connector">
-    <div data-theme="a" data-role="header">
-        <h3>
-            Connector
-        </h3>
-    </div>
-    <div data-role="content">
-        <div data-role="fieldcontain">
-            <label for="txtIpAddress">
-                IP Address
-            </label>
-            <input name="" id="txtIpAddress" placeholder="192.168.1.1" value="" type="text" data-mini="true">
-        </div>
-        <div data-role="fieldcontain">
-            <label for="txtPortNumber">
-                Port
-            </label>
-            <input name="" id="txtPortNumber" placeholder="21" value="" type="number" data-mini="true">
-        </div>
-        <div data-role="fieldcontain">
-            <label for="txtUserName">
-                User Name
-            </label>
-            <input name="" id="txtUserName" placeholder="anonymous" value="" type="text" data-mini="true">
-        </div>
-        <div data-role="fieldcontain">
-            <label for="txtPassword">
-                Password
-            </label>
-            <input name="" id="txtPassword" placeholder="" value="" type="password" data-mini="true">
-        </div>
-        <a data-role="button" href="#uploader" data-icon="gear" data-iconpos="left" id = "btnTestConnection" onclick = "javascript:FtpConnection();">Test Connection
-        </a>
-        <a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home
-            Page &lt;&lt; </a>
-    </div>
-    <div data-theme="a" data-role="footer" data-position="fixed">
-        <h3>
-            Powered by Code Warriors
-        </h3>
-    </div>
-</div>
+
 <!-- Uploader -->
 <div data-role="page" id="uploader">
     <div data-theme="a" data-role="header">
@@ -73,17 +31,33 @@
         </h3>
     </div>
     <div data-role="content">
-        <div data-role="fieldcontain">
-            <label for="filesUploader">
-                Choose Files to Upload
-            </label>
-            <br />
-            <asp:fileupload id="file_upload" class="multi" runat="server" width="400" size="50" />
-            <input type = "file" id = "file_upload" class="multi" runat="server" />
-        </div>
-        <a data-role="button" href="#home" data-icon="gear" data-iconpos="left">Upload </a>
         <a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home Page
             &lt;&lt; </a>
+        
+        <div class="fileManager">
+            finder</div>
+        <script type="text/javascript" charset="utf-8">
+            $(function () {
+                $('.fileManager2').elfinder({
+                    url: '@Url.Content("~/elfinder.connector")',
+                    height: 350,
+                    width: 250
+                });
+            });
+        </script>
+        <!--  Executes on Document ready to hide other buttons -->
+        <script>
+            $(document).ready(function () {
+                $(".elfinder-toolbar-button-separator").addClass('noDisplay');
+                $(".elfinder-button").each(function (index) {
+                    $(this).addClass('noDisplay');
+                });
+                $(".elfinder-button-search").addClass('noDisplay');
+                $(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+                $(".elfinder-button-icon-info").parent().removeClass('noDisplay');
+                //$(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+            });
+        </script>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
         <h3>
@@ -101,58 +75,12 @@
     <div data-role="content">
         <a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home Page
             &lt;&lt; </a>
-        <div data-role="collapsible-set">
-            <div data-role="collapsible">
-                <h3>
-                    Direct FTP
-                </h3>
-                <div data-role="fieldcontain">
-                    <label for="textinput6">
-                        IP Address
-                    </label>
-                    <input name="" id="textinput6" placeholder="192.168.1.1" value="" type="text" data-mini="true">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="textinput7">
-                        Port
-                    </label>
-                    <input name="" id="textinput7" placeholder="21" value="" type="number" data-mini="true">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="textinput8">
-                        User Name
-                    </label>
-                    <input name="" id="textinput8" placeholder="anonymous" value="" type="text" data-mini="true">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="textinput9">
-                        Password
-                    </label>
-                    <input name="" id="textinput9" placeholder="" value="" type="password" data-mini="true">
-                </div>
-                <div data-role="fieldcontain">
-                    <label for="textinput10">
-                        FTP Path (Directory/ Folder/ File)
-                    </label>
-                    <input name="" id="textinput10" placeholder="C://FolderName" value="" type="text"
-                        data-mini="true">
-                </div>
-                <a data-role="button" href="#page1" data-icon="arrow-d" data-iconpos="left">Download
-                </a>
-            </div>
-        </div>
+        <div data-role="collapsible-set">           
         <div data-role="collapsible" data-collapsed="true">
             <h3>
                 Choose Remote Server
             </h3>
-            <div data-role="collapsible-set">
-                @*<div data-role="collapsible">
-                            <h3>
-                                Khushbu-PC (192.168.1.69)
-                            </h3>
-                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Pinnacle Towers, Sector 63, Noida&amp;zoom=13&amp;size=200x200&amp;markers=Pinnacle Towers, Sector 63, Noida&amp;sensor=false"
-                                width="200" height="200">
-                        </div>*@
+            <div data-role="collapsible-set">                
                 <div data-role="collapsible">
                     <h3>
                         Varun-PC (192.168.1.135)
@@ -160,7 +88,8 @@
                     <img src="https://maps.googleapis.com/maps/api/staticmap?center=Pinnacle Towers, Sector 63, Noida&amp;zoom=13&amp;size=200x200&amp;markers=Pinnacle Towers, Sector 63, Noida&amp;sensor=false"
                         width="200" height="200">
                     <br />
-                    <br/><br />
+                    <br />
+                    <br />
                     <!-- EL Finder File Manager -->
                     <div class="fileManager">
                         finder</div>
@@ -169,7 +98,12 @@
                             $('.fileManager').elfinder({
                                 url: '@Url.Content("~/elfinder.connector")',
                                 height: 350,
-                                width: 250
+                                width: 250,
+                                handlers: {
+                                    select: function (event, elfinderInstance) {
+                                        $(".elfinder-button-icon-info").click();
+                                    }
+                                }
                             });
                         });
                     </script>
@@ -182,7 +116,9 @@
                             });
                             $(".elfinder-button-search").addClass('noDisplay');
                             $(".elfinder-button-icon-download").parent().removeClass('noDisplay');
-                            //$(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+                            $(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+                            $(".elfinder-button-icon-info").parent().removeClass('noDisplay');
+
                         });
                     </script>
                 </div>

@@ -1,20 +1,173 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
+<form action="" method="post" enctype="multipart/form-data">
+<!-- Home -->
+<div data-role="page" id="home">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Hackathon
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading">Please choose your action </li>
+            <li data-theme="c"><a href="#uploader" data-transition="slide">Upload </a></li>
+            <li data-theme="c"><a href="#downloader" data-transition="slide">Download </a></li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Powered by Code Warriors
+        </h3>
+    </div>
+</div>
 
-<h2>elFinder file manager</h2>
-<p><b>Note:</b> be sure to have a symbolic link named <code>data</code> that points to <code>c:\users</code> directory.</p>
-<p>elFinder connector is by default configured to search <code>data</code> directory under the website directory 
-(see <code>localFSRootDirectoryPath</code> and <code>baseUrl</code> properties of the <code>elFinder</code> Web.config section).</p>
-<p>To create a symbolic link, open command prompt in website directory (where the Web.config is) and type: <code>mklink /D data c:\users</code></p>
-
-<div class="fileManager">finder</div>   
-
- <script type="text/javascript" charset="utf-8">
-     $(function () {
-         $('.fileManager').elfinder({
-             url: '@Url.Content("~/elfinder.connector")',
-             height: 600
-         });
-     });
-</script>
+<!-- Uploader -->
+<div data-role="page" id="uploader">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Uploader
+        </h3>
+    </div>
+    <div data-role="content">
+        <a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home Page
+            &lt;&lt; </a>
+        
+        <div class="fileManager">
+            finder</div>
+        <script type="text/javascript" charset="utf-8">
+            $(function () {
+                $('.fileManager2').elfinder({
+                    url: '@Url.Content("~/elfinder.connector")',
+                    height: 350,
+                    width: 250
+                });
+            });
+        </script>
+        <!--  Executes on Document ready to hide other buttons -->
+        <script>
+            $(document).ready(function () {
+                $(".elfinder-toolbar-button-separator").addClass('noDisplay');
+                $(".elfinder-button").each(function (index) {
+                    $(this).addClass('noDisplay');
+                });
+                $(".elfinder-button-search").addClass('noDisplay');
+                $(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+                $(".elfinder-button-icon-info").parent().removeClass('noDisplay');
+                //$(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+            });
+        </script>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Powered by Code Warriors
+        </h3>
+    </div>
+</div>
+<!-- Downloader -->
+<div data-role="page" id="downloader">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Downloader
+        </h3>
+    </div>
+    <div data-role="content">
+        <a data-role="button" href="#home" data-icon="home" data-iconpos="left">Go to Home Page
+            &lt;&lt; </a>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+            <div id="lnkDownloads"></div>
+                <h3>
+                    Direct FTP
+                </h3>
+                <div data-role="fieldcontain">
+                    <label for="txtIp">
+                        IP Address
+                    </label>
+                    <input name="" id="txtIp" placeholder="192.168.1.1" value="192.168.1.69" type="text" data-mini="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtport">
+                        Port
+                    </label>
+                    <input name="" id="txtport" placeholder="21" value="21" type="number" data-mini="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtUser">
+                        User Name
+                    </label>
+                    <input name="" id="txtUser" placeholder="anonymous" value="autohou0" type="text" data-mini="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtPass">
+                        Password
+                    </label>
+                    <input name="" id="txtPass" placeholder="" value="jill5113" type="password" data-mini="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="txtPath">
+                        FTP Path (Directory/ Folder/ File)
+                    </label>
+                    <input name="" id="txtPath" placeholder="C://FolderName" value="" type="text" data-mini="true">
+                </div>
+                <a data-role="button" href="#" onclick="javascript:return FileDownload();" data-icon="arrow-d"
+                    data-iconpos="left">Download </a>
+            </div>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+            <h3>
+                Choose Remote Server
+            </h3>
+            <div data-role="collapsible-set">                
+                <div data-role="collapsible">
+                    <h3>
+                        Varun-PC (192.168.1.135)
+                    </h3>
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Pinnacle Towers, Sector 63, Noida&amp;zoom=13&amp;size=200x200&amp;markers=Pinnacle Towers, Sector 63, Noida&amp;sensor=false"
+                        width="200" height="200">
+                    <br />
+                    <br />
+                    <br />
+                    <!-- EL Finder File Manager -->
+                    <div class="fileManager">
+                        finder</div>
+                    <script type="text/javascript" charset="utf-8">
+                        $(function () {
+                            $('.fileManager').elfinder({
+                                url: '@Url.Content("~/elfinder.connector")',
+                                height: 350,
+                                width: 250,
+                                handlers: {
+                                    select: function (event, elfinderInstance) {
+                                        $(".elfinder-button-icon-info").click();
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                    <!--  Executes on Document ready to hide other buttons -->
+                    <script>
+                        $(document).ready(function () {
+                            $(".elfinder-toolbar-button-separator").addClass('noDisplay');
+                            $(".elfinder-button").each(function (index) {
+                                $(this).addClass('noDisplay');
+                            });
+                            $(".elfinder-button-search").addClass('noDisplay');
+                            $(".elfinder-button-icon-download").parent().removeClass('noDisplay');
+                            $(".elfinder-button-icon-upload").parent().removeClass('noDisplay');
+                            $(".elfinder-button-icon-info").parent().removeClass('noDisplay');
+                           
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Powered by Code Warriors
+        </h3>
+    </div>
+</div>
+</form>
