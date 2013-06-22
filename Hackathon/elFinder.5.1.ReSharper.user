@@ -1,0 +1,58 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Scripts/d:elFinder-2.0/f:elfinder.min.js" caret="36293" fromTop="12" />
+      <File id="53FE1298-2B81-4BAE-9255-1C9B7589C644/d:Service/f:LocalFileSystemVolume.cs" caret="20492" fromTop="24" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="36257" fromTop="35" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/f:Global.asax.cs" caret="968" fromTop="32" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Scripts/f:jquery-1.9.1-min.js" caret="111602" fromTop="18" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Scripts/f:jquery.mobile-1.3.1.min.js" caret="163787" fromTop="30" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/f:Web.config" caret="558" fromTop="14" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="171" fromTop="4" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Shared/f:_Layout.cshtml" caret="622" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/f:Web.config" caret="655" fromTop="15" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="0" fromTop="0" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Shared/f:_Layout.cshtml" caret="157" fromTop="4" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="24658" fromTop="27" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="37257" fromTop="49" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="35875" fromTop="33" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="34573" fromTop="28" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="37330" fromTop="27" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="34750" fromTop="0" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="35550" fromTop="32" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Content/d:elFinder-2.0/d:css/f:elfinder.min.css" caret="36080" fromTop="26" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="344" fromTop="15" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="267" fromTop="9" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="344" fromTop="15" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Shared/f:_Layout.cshtml" caret="1516" fromTop="20" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Scripts/f:jquery-1.9.1-min.js" caret="111602" fromTop="18" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Scripts/f:jquery.mobile-1.3.1.min.js" caret="163787" fromTop="30" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Shared/f:_Layout.cshtml" caret="1516" fromTop="20" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="7434" fromTop="13" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="8459" fromTop="35" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Home/f:Index.cshtml" caret="37" fromTop="0" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Shared/f:_Layout.cshtml" caret="1180" fromTop="16" />
+      <File id="CC94455E-BC20-4920-8408-364245E4A69F/d:Views/d:Shared/f:_Layout.cshtml" caret="622" fromTop="9" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.6.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
